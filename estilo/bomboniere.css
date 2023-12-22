@@ -1,0 +1,55 @@
+#tabela {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.zebrado1 {
+    background-color: #5cacee;
+}
+
+.zebrado2 {
+    background-color: #87ceff;
+}
+
+.btn-tamanho {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .btn-tamanho:hover {
+    background-color: #45a049;
+  }
+
+  #limpar-btn {
+    background-color: #ff3333;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #limpar-btn:hover {
+    background-color: #cc0000;
+  }

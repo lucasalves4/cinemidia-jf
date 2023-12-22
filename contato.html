@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <title>CINEMÍDIA - JUIZ DE FORA</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Lucas Alves" />
+
+  <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon" />
+
+  <meta name="description" content="Pagina do CINEMÍDIA - JUIZ DE FORA" />
+  <meta name="keywords" content="Cinema,Filmes,Documentario" />
+  <link rel="stylesheet" href="./estilo/folhaEstilo.css" />
+  <link rel="stylesheet" href="./estilo/contato.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Amaranth|Fredoka+One" rel="stylesheet" />
+
+  <script src="./script/contato.js"></script>
+
+</head>
+
+<body>
+  <h1>CINEMÍDIA - JUIZ DE FORA</h1>
+
+  <table id="barraMenu">
+    <tr>
+      <td class="celula_barraMenu">
+        <a href="index.html"> FILMES EM CARTAZ </a>
+      </td>
+      <td class="celula_barraMenu">
+        <a href="lancamentos.html"> + LANÇAMENTOS </a>
+      </td>
+      <td class="celula_barraMenu">
+        <a href="bomboniere.html"> BOMBONIERE </a>
+      </td>
+      <td class="celula_barraMenu"><a href="contato.html"> CONTATO </a></td>
+    </tr>
+  </table>
+
+  <h2>Precisa falar conosco?!</h2>
+
+
+  <form>
+    <label for="nome">*Nome:</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="email">*E-mail:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="celular">Celular:</label>
+    <input type="text" id="celular" name="celular" maxlength="15" oninput="formatarCelular(this.value)" />
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf" maxlength="14" oninput="formatarCPF(this.value)" />
+
+    <label for="mensagem">*Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+    <input type="submit" value="Enviar Mensagem" />
+  </form>
+
+
+
+  <dl id="campoEndereco">
+    <dt>Endereço</dt>
+    <dd>Av. Barão do Rio Branco, 3925</dd>
+    <dd>Bom Pastor, Juiz de Fora - MG</dd>
+    <dd>36021-160</dd>
+    <dd>Tel: (32) 3250-4000</dd>
+    <dd>E-mail: contato@cinejf.com.br</dd>
+  </dl>
+
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2203.0775577473178!2d-43.34458706940611!3d-21.775614622721303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989b43bd06e0eb%3A0xe9c8348866ac220a!2sShopping+Bom+Pastor!5e0!3m2!1spt-BR!2sbr!4v1543227226785"
+    style="border: 0" allowfullscreen></iframe>
+
+  <div id="rodape">
+    © Copyright 2023 CINEMÍDIA - JUIZ DE FORA - Todos os Direitos Reservados
+  </div>
+</body>
+
+</html>

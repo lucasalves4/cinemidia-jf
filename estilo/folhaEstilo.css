@@ -1,0 +1,87 @@
+p,
+div,
+table {
+  font-size: 25px;
+  font-family: "Amaranth", sans-serif;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 48px;
+  background-position-x: 0;
+  background-color: white;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  background-color: white;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: white;
+  /*background-image: url("imagens/background4.jpg");*/
+}
+
+#rodape {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+#barraMenu {
+  font-family: "Fredoka One", cursive;
+  font-size: 25px;
+  margin: 80px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+  width: 90%;
+  border: 3px solid #73ad21;
+  background-color: white;
+  text-align: center;
+}
+
+a:visited,
+a:link {
+  color: black;
+
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.celula_barraMenu {
+  width: 25%;
+}
+
+#centro {
+  position: static;
+  left: 70px;
+  top: 70px;
+  height: auto;
+  width: auto;
+  background-color: lightblue;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}

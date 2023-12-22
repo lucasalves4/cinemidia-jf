@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <title>CINEMÍDIA - JUIZ DE FORA</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Lucas Alves" />
+
+  <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon" />
+
+  <meta name="description" content="Pagina do CINEMÍDIA - JUIZ DE FORA" />
+  <meta name="keywords" content="Cinema,Filmes,Documentario" />
+  <link rel="stylesheet" href="./estilo/folhaEstilo.css" />
+  <link rel="stylesheet" href="./estilo/index.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Amaranth|Fredoka+One" rel="stylesheet" />
+
+  <script src="./script/index.js"></script>
+
+</head>
+
+<body>
+  <h1>CINEMÍDIA - JUIZ DE FORA</h1>
+
+  <table id="barraMenu">
+    <tr>
+      <td class="celula_barraMenu">
+        <a href="index.html"> FILMES EM CARTAZ </a>
+      </td>
+      <td class="celula_barraMenu">
+        <a href="lancamentos.html"> + LANÇAMENTOS </a>
+      </td>
+      <td class="celula_barraMenu">
+        <a href="bomboniere.html"> BOMBONIERE </a>
+      </td>
+      <td class="celula_barraMenu"><a href="contato.html"> CONTATO </a></td>
+    </tr>
+  </table>
+
+  <h2>Confira todos os filmes em cartaz</h2>
+
+  <div id="barraBuscar">
+    <input type="text" id="searchInput" placeholder="Pesquisar filmes..." />
+    <button id="botaoBuscar" onclick="searchMovies()">Pesquisar</button>
+  </div>
+
+
+  <div id="centro">
+    <table>
+      <tr>
+        <td>
+          <div id="noResultsMessage" style="display: none;">Filme não encontrado!</div>
+          <img src="imagens/filme_01.jpg" alt="Capa do filme Wonka" />
+        </td>
+        <td>
+          <dl>
+            <dt><span>Wonka</span></dt>
+
+            <dd><span>Sinopse:</span></dd>
+
+            <dd>
+              A jornada do icônico personagem até se tornar dono da maior fábrica de chocolate do mundo. Apaixonado por
+              invenções, Willy será guiado em aventuras extraordinárias. Além disso, o protagonista encontra seus fiéis
+              ajudantes: famosos Oompa-Loompas, interpretados por Hugh Grant.
+            </dd>
+
+            <dd><span><a href="https://www.youtube.com/watch?v=i4236tIVEkM" target="_blank">Assista ao
+                  trailer</a></span></dd>
+
+            <dd><button id="btnWonka" onclick="toggleInfo('infoWonka', 'btnWonka')">Mais Informações</button></dd>
+
+            <div id="infoWonka" style="display: none;">
+
+              <dd><span>Horários:</span> 14:20 | 20:00</dd>
+
+              <dd><span>Classificação:</span> 10 anos</dd>
+
+              <dd><span>Duração:</span> 113 min</dd>
+            </div>
+          </dl>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/filme_02.jpg" alt="Capa do filme Napoleão" />
+        </td>
+        <td>
+          <dl>
+            <dt><span>Napoleão</span></dt>
+
+            <dd><span>Sinopse:</span></dd>
+
+            <dd>
+              Ascensão e queda do icônico Imperador francês Napoleão Bonaparte. O filme captura a incansável jornada de
+              Bonaparte pelo poder, a partir de sua relação viciante e volátil com seu verdadeiro amor, Josefina,
+              mostrando suas táticas militares e políticas visionárias em algumas das mais dinâmicas sequências de
+              batalhas já filmadas.
+            </dd>
+
+            <dd><span><a href="https://www.youtube.com/watch?v=ry7L4F6JJZg" target="_blank">Assista ao
+                  trailer</a></span></dd>
+
+            <dd><button id="btnNapoleao" onclick="toggleInfo('infoNapoleao', 'btnNapoleao')">Mais Informações</button>
+            </dd>
+
+            <div id="infoNapoleao" style="display: none;">
+
+              <dd><span>Horários:</span> 16:30 | 19:45 | 21:15</dd>
+
+              <dd><span>Classificação:</span> 16 anos</dd>
+
+              <dd><span>Duração:</span> 160 min</dd>
+            </div>
+          </dl>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/filme_03.jpg" alt="Capa do filme Jogos Vorazes - A Cantiga dos Pássaros e das Serpentes" />
+        </td>
+        <td>
+          <dl>
+            <dt><span>Jogos Vorazes - A Cantiga dos Pássaros e das Serpentes</span></dt>
+
+            <dd><span>Sinopse:</span></dd>
+
+            <dd>
+              Anos antes de se tornar o tirânico presidente de Panem, Coriolanus Snow aos 18 anos vê uma chance de
+              mudança de sorte quando é escolhido para ser mentor de Lucy Gray Baird, a garota tributo do empobrecido
+              Distrito 12.
+            </dd>
+
+            <dd><span><a href="https://www.youtube.com/watch?v=Zw3QtH64Fxc" target="_blank">Assista ao
+                  trailer</a></span></dd>
+
+            <dd><button id="btnJogosVorazes" onclick="toggleInfo('infoJogosVorazes', 'btnJogosVorazes')">Mais
+                Informações</button>
+            </dd>
+
+            <div id="infoJogosVorazes" style="display: none;">
+
+              <dd><span>Horários:</span> 13:30 | 15:45 | 22:15</dd>
+
+              <dd><span>Classificação:</span> 16 anos</dd>
+
+              <dd><span>Duração:</span> 165 min</dd>
+            </div>
+          </dl>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/filme_04.jpg" alt="Capa do filme Aquaman 2: O Reino Perdido" />
+        </td>
+        <td>
+          <dl>
+            <dt><span>Aquaman 2: O Reino Perdido</span></dt>
+
+            <dd><span>Sinopse:</span></dd>
+
+            <dd>
+              Aquaman 2 é a sequência do filme Aquaman de 2018, que acompanha o filho do humano Tom Curry (Temuera
+              Morrison) com a atlante Atlanna (Nicole Kidman), Arthur Curry (Jason Momoa). Ele cresce com a vivência de
+              um humano e as capacidades metahumanas de um atlante. Nesta sequência, quando um poder ancestral é
+              liberado, o Aquaman deve forjar uma aliança incômoda com um aliado improvável para proteger Atlântida e o
+              resto do mundo, de uma devastação irreversível.
+            </dd>
+
+            <dd><span><a href="https://www.youtube.com/watch?v=wG5WCP2MTkY" target="_blank">Assista ao
+                  trailer</a></span></dd>
+
+            <dd><button id="btnAquaman" onclick="toggleInfo('infoAquaman', 'btnAquaman')">Mais
+                Informações</button>
+            </dd>
+
+            <div id="infoAquaman" style="display: none;">
+
+              <dd><span>Horários:</span> 14:40 | 17:15 | 19:50 | 22:25</dd>
+
+              <dd><span>Classificação:</span> 12 anos</dd>
+
+              <dd><span>Duração:</span> 124 min</dd>
+            </div>
+          </dl>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/filme_05.jpg" alt="Capa do filme O Sequestro do Voo 375" />
+        </td>
+        <td>
+          <dl>
+            <dt><span>O Sequestro do Voo 375</span></dt>
+
+            <dd><span>Sinopse:</span></dd>
+
+            <dd>
+              Baseado em fatos reais, O Sequestro do Voo 375 se passa durante o Plano Sarney, 1986. No Brasil passando
+              por dificuldades economicas e financeiras, Nonato, um homem simples, procura por emprego. Mas sem
+              resultado, ele então resolve protestar de medida dramática: sequestrar o voo 375, da Vasp, com mais de cem
+              passageiros - e ordena ao comandante Murilo que jogue o avião em cima do Palácio do Planalto. Para evitar
+              a tragédia, o piloto acaba sendo obrigado a executar manobras que jamais haviam sido tentadas com um avião
+              daquele tamanho.
+            </dd>
+
+            <dd><span><a href="https://www.youtube.com/watch?v=-WItUHprYsw" target="_blank">Assista ao
+                  trailer</a></span></dd>
+
+            <dd><button id="btnSequestro" onclick="toggleInfo('infoSequestro', 'btnSequestro')">Mais
+                Informações</button>
+            </dd>
+
+            <div id="infoSequestro" style="display: none;">
+
+              <dd><span>Horários:</span> 15:20 | 17:50</dd>
+
+              <dd><span>Classificação:</span> 14 anos</dd>
+
+              <dd><span>Duração:</span> 100 min</dd>
+            </div>
+          </dl>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="rodape">
+    © Copyright 2023 CINEMÍDIA - JUIZ DE FORA - Todos os Direitos Reservados
+  </div>
+</body>
+
+</html>

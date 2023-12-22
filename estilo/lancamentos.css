@@ -1,0 +1,33 @@
+.tabela_lacamento th,
+.tabela_lacamento td {
+    border: 1px solid #040505;
+    padding: 10px;
+}
+
+.tabela_lacamento {
+    border: 5px solid #040505;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 50px;
+    background-color: lightblue;
+}
+
+td {
+    width: 25%;
+}
+
+#sinopse {
+    width: 50%;
+    text-align: center;
+}
+
+#cartaz-container {
+    display: none;
+  }
+  
+  #cartaz-img {
+    max-width: 100%;
+    max-height: 300px; /* Ajuste conforme necessário */
+  }

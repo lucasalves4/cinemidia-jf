@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <title>CINEMÍDIA - JUIZ DE FORA</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Lucas Alves" />
+
+  <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon" />
+
+  <meta name="description" content="Pagina do CINEMÍDIA - JUIZ DE FORA" />
+  <meta name="keywords" content="Cinema,Filmes,Documentario" />
+  <link rel="stylesheet" href="./estilo/folhaEstilo.css" />
+  <link rel="stylesheet" href="./estilo/bomboniere.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Amaranth|Fredoka+One" rel="stylesheet" />
+</head>
+
+<script src="./script/bomboniere.js"></script>
+
+<body>
+  <h1>CINEMÍDIA - JUIZ DE FORA</h1>
+
+  <table id="barraMenu">
+    <tr>
+      <td class="celula_barraMenu">
+        <a href="index.html"> FILMES EM CARTAZ </a>
+      </td>
+      <td class="celula_barraMenu">
+        <a href="lancamentos.html"> + LANÇAMENTOS </a>
+      </td>
+      <td class="celula_barraMenu">
+        <a href="bomboniere.html"> BOMBONIERE </a>
+      </td>
+      <td class="celula_barraMenu"><a href="contato.html"> CONTATO </a></td>
+    </tr>
+  </table>
+
+  <h2>Confira os itens diponíveis na nossa bomboniere</h2>
+
+  <table id="tabela">
+    <tr>
+      <th>Item</th>
+      <th colspan="3">Tamanho</th>
+      <th colspan="3">Preço (R$)</th>
+    </tr>
+
+    <tr>
+      <td>Pipoca de sal</td>
+      <td><button class="btn-tamanho" data-item="pipocaSal" data-tamanho="pequena">Pequena</button></td>
+      <td><button class="btn-tamanho" data-item="pipocaSal" data-tamanho="media">Média</button></td>
+      <td><button class="btn-tamanho" data-item="pipocaSal" data-tamanho="grande">Grande</button></td>
+      <td>9</td>
+      <td>13</td>
+      <td>17</td>
+    </tr>
+
+    <tr>
+      <td>Pipoca doce</td>
+      <td><button class="btn-tamanho" data-item="pipocaDoce" data-tamanho="pequena">Pequena</button></td>
+      <td><button class="btn-tamanho" data-item="pipocaDoce" data-tamanho="media">Média</button></td>
+      <td><button class="btn-tamanho" data-item="pipocaDoce" data-tamanho="grande">Grande</button></td>
+      <td>11</td>
+      <td>15</td>
+      <td>20</td>
+    </tr>
+
+    <tr>
+      <td>Refrigerante</td>
+      <td><button class="btn-tamanho" data-item="refrigerante" data-tamanho="pequena">Pequeno</button></td>
+      <td><button class="btn-tamanho" data-item="refrigerante" data-tamanho="media">Médio</button></td>
+      <td><button class="btn-tamanho" data-item="refrigerante" data-tamanho="grande">Grande</button></td>
+      <td>6</td>
+      <td>8</td>
+      <td>12</td>
+    </tr>
+
+    <tr>
+      <td>Suco</td>
+      <td colspan="3"><button class="btn-tamanho" data-item="suco" data-tamanho="unico">Lata 350ml</button></td>
+      <td colspan="3">7</td>
+    </tr>
+
+    <tr>
+      <td>MilkShake</td>
+      <td><button class="btn-tamanho" data-item="milkShake" data-tamanho="pequena">Pequeno</button></td>
+      <td><button class="btn-tamanho" data-item="milkShake" data-tamanho="media">Médio</button></td>
+      <td><button class="btn-tamanho" data-item="milkShake" data-tamanho="grande">Grande</button></td>
+      <td>8</td>
+      <td>12</td>
+      <td>15</td>
+    </tr>
+
+    <tr>
+      <td>Biscoito</td>
+      <td colspan="3"><button class="btn-tamanho" data-item="biscoito" data-tamanho="unico">140 g</button></td>
+      <td colspan="3">7</td>
+    </tr>
+
+    <tr>
+      <td>Amendoim</td>
+      <td colspan="3"><button class="btn-tamanho" data-item="biscoito" data-tamanho="unico">250 g</button></td>
+      <td colspan="3">7</td>
+    </tr>
+
+    <tr>
+      <td>Batata Chips</td>
+      <td><button class="btn-tamanho" data-item="batata" data-tamanho="pequena">Pequena</button></td>
+      <td><button class="btn-tamanho" data-item="batata" data-tamanho="media">Média</button></td>
+      <td><button class="btn-tamanho" data-item="batata" data-tamanho="grande">Grande</button></td>
+      <td>7</td>
+      <td>10</td>
+      <td>14</td>
+    </tr>
+
+    <tr>
+      <td>Chocolate</td>
+      <td colspan="3"><button class="btn-tamanho" data-item="chocolate" data-tamanho="unico">150 g</button></td>
+      <td colspan="3">8</td>
+    </tr>
+
+    <tr>
+      <td>Bombom</td>
+      <td colspan="3"><button class="btn-tamanho" data-item="bombom" data-tamanho="unico">10 g</button></td>
+      <td colspan="3">2.50</td>
+    </tr>
+  </table>
+
+  <div>
+    <h3>Itens Selecionados</h3>
+    <ul id="itens-selecionados"></ul>
+    <p>Total: R$ <span id="total">0.00</span></p>
+    <button id="limpar-btn">Limpar</button>
+  </div>
+
+  <div id="rodape">
+    © Copyright 2023 CINEMÍDIA - JUIZ DE FORA - Todos os Direitos Reservados
+  </div>
+</body>
+
+</html>

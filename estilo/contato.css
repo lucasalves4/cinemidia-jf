@@ -1,0 +1,44 @@
+dd {
+    font-size: 25px;
+    font-family: "Amaranth", sans-serif;
+    text-align: centrer;
+}
+
+dt {
+    font-family: "Fredoka One", cursive;
+    font-size: 28px;
+    background-color: white;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+form {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #21b85b;
+    color: white;
+    cursor: pointer;
+}
+
+#campoEndereco {
+    text-align: center;
+}

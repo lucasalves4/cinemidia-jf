@@ -1,0 +1,65 @@
+#centro {
+    margin: 50px;
+}
+
+dd {
+    font-size: 25px;
+    font-family: "Amaranth", sans-serif;
+    margin: 28px;
+}
+
+dt {
+    font-family: "Fredoka One", cursive;
+    font-size: 28px;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Amaranth", sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    border-bottom: 2px solid white;
+}
+
+#barraBuscar {
+    margin: 50px;
+    text-align: end;
+}
+
+#botaoBuscar {
+    padding: 4px 20px;
+    font-size: 18px;
+    font-family: "Amaranth", sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchInput {
+    margin: 6px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #73ad21;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+
+  }
+
+  #searchInput:focus {
+    background-color: #f0f0f0;
+    border-color: #5c9ded;
+  }
